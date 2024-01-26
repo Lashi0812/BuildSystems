@@ -1,2 +1,10 @@
 # @unused
-load("//BAZEL/01_Minimal:MyExe", "main")
+# load("//BAZEL/01_Minimal:MyExe", "main")
+filegroup(
+    name = "02_bst",
+    srcs = [
+        "//BAZEL/02_Build_Simple_Target/lib_dynamic:dynamic_lib",
+        "//BAZEL/02_Build_Simple_Target/lib_static:static_lib",
+        "//BAZEL/02_Build_Simple_Target/src:main",
+    ],
+)

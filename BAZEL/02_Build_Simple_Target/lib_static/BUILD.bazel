@@ -1,0 +1,15 @@
+# BAZEL/02_Build_Simple_Target/lib_static/BUILD.bazel
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "static_lib",
+    srcs = [
+        "add.cpp",
+        "mul.cpp",
+    ],
+    hdrs = ["operations.h"],
+    linkstatic = True,
+    visibility = ["//visibility:public"],
+    includes = ["."],
+    tags = ["02_bst"],
+)

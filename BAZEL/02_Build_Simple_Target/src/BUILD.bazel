@@ -1,0 +1,8 @@
+cc_binary(
+    name = "main",
+    srcs = ["main.cpp"],
+    deps = ["//BAZEL/02_Build_Simple_Target/lib_dynamic:dynamic_lib"],
+    tags = ["02_bst"],
+    visibility = ["//visibility:public"],
+    linkstatic = False,
+)

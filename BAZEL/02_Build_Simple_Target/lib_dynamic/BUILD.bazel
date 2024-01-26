@@ -1,0 +1,13 @@
+# BAZEL/02_Build_Simple_Target/lib_dynamic/BUILD.bazel
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "dynamic_lib",
+    srcs = [
+        "dynamic.cpp",
+    ],
+    deps = ["//BAZEL/02_Build_Simple_Target/lib_static:static_lib"],
+    linkstatic = False, # this make it Dynamic
+    visibility = ["//visibility:public"],
+    tags = ["02_bst"],
+)
