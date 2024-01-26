@@ -1,1 +1,2 @@
+# @unused
 load("//BAZEL/01_Minimal:MyExe", "main")
