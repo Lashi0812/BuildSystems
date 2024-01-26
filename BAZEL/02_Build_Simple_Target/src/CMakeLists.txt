@@ -1,2 +1,0 @@
-add_executable(build_simple_target main.cpp)
-target_link_libraries(build_simple_target PRIVATE dynamiclib)
