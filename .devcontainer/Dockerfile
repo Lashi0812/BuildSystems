@@ -11,10 +11,16 @@ RUN --mount=type=cache,target=/var/cache/apt \
                    curl \
                    wget \
                    zsh \
-                   ca-certificates 
+                   ca-certificates \
+                   unzip \
+                   clang \
+                   libatlas-base-dev liblapack-dev liblapacke-dev \
+                   openmpi-bin libopenmpi-dev \
+                   libboost-filesystem-dev libboost-python-dev libboost-test-dev \
+                   gcc-mingw-w64 g++-mingw-w64 \
+                   pkg-config libzmq3-dev doxygen libgraphviz-dev uuid-dev 
 
 # instal conda 
-#! this is dont need since i have already build the image so reusing same image
 RUN mkdir ~/miniconda3 && \
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh && \
     bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 && \
@@ -36,8 +42,6 @@ RUN curl -O -L https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSI
     rm cmake-${CMAKE_VERSION}-linux-x86_64.sh
 
 #* install bazel
-RUN apt install -y unzip
-
 ARG BAZEL_VERSION=6.1.2
 RUN curl -O -L https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh && \
     chmod +x bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh && \
