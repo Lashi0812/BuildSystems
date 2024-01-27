@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.27)
+project(ControlCompilation LANGUAGES CXX)
+
+option(MAKE_STATIC_LIBRARY "Compile sources into a static library" OFF)
+option(MAKE_SHARED_LIBRARY "Compile sources into a shared library" OFF)
+
+list(APPEND _source operations.cpp operations.hpp)
+
+if(MAKE_SHARED_LIBRARY)
+    message(STATUS "Building shared library and linking it")
+    add_library(shared_lib SHARED ${_source})
+    add_executable(conditional_main main.cpp)
+    target_link_libraries(conditional_main shared_lib)
+elseif(MAKE_STATIC_LIBRARY)
+    message(STATUS "Building static library and linking it")
+    add_library(static_lib STATIC ${_source})
+    add_executable(conditional_main main.cpp)
+    target_link_libraries(conditional_main static_lib)
+else()
+    add_executable(conditional_main main.cpp ${_source})
+endif()

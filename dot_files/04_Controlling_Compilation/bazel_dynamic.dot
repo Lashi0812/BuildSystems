@@ -1,0 +1,10 @@
+digraph mygraph {
+  node [shape=box];
+  "//BAZEL/04_Controlling_Compilation:dynamic_executable"
+  "//BAZEL/04_Controlling_Compilation:dynamic_executable" -> "//BAZEL/04_Controlling_Compilation:main.cpp"
+  "//BAZEL/04_Controlling_Compilation:dynamic_executable" -> "//BAZEL/04_Controlling_Compilation:dynamiclib"
+  "//BAZEL/04_Controlling_Compilation:main.cpp"
+  "//BAZEL/04_Controlling_Compilation:dynamiclib"
+  "//BAZEL/04_Controlling_Compilation:dynamiclib" -> "//BAZEL/04_Controlling_Compilation:operations.hpp\n//BAZEL/04_Controlling_Compilation:operations.cpp"
+  "//BAZEL/04_Controlling_Compilation:operations.hpp\n//BAZEL/04_Controlling_Compilation:operations.cpp"
+}

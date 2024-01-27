@@ -1,0 +1,8 @@
+digraph "conditional_main" {
+node [
+  fontsize = "12"
+];
+    "node4" [ label = "conditional_main", shape = egg ];
+    "node5" [ label = "shared_lib", shape = doubleoctagon ];
+    "node4" -> "node5" [ style = dotted ] // conditional_main -> shared_lib
+}

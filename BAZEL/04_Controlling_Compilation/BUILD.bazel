@@ -1,0 +1,33 @@
+cc_binary(
+    name = "executable",
+    deps = [],
+    srcs = ["main.cpp","operations.cpp","operations.hpp"],
+)
+
+cc_library(
+    name = "staticlib",
+    deps = [],
+    srcs = ["operations.cpp"],
+    hdrs = ["operations.hpp"],
+    linkstatic = True,
+)
+
+cc_binary(
+    name = "static_executable",
+    deps = [":staticlib"],
+    srcs = ["main.cpp"],
+)
+
+cc_library(
+    name = "dynamiclib",
+    deps = [],
+    srcs = ["operations.cpp"],
+    hdrs = ["operations.hpp"],
+    linkstatic = False,
+)
+
+cc_binary(
+    name = "dynamic_executable",
+    deps = [":dynamiclib"],
+    srcs = ["main.cpp"],
+)

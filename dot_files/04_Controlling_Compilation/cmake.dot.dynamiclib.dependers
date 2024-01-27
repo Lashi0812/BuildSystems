@@ -1,0 +1,8 @@
+digraph "dynamiclib" {
+node [
+  fontsize = "12"
+];
+    "node2" [ label = "dynamiclib", shape = doubleoctagon ];
+    "node1" [ label = "build_simple_target", shape = egg ];
+    "node1" -> "node2" [ style = dotted ] // build_simple_target -> dynamiclib
+}
