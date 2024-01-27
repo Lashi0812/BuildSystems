@@ -12,7 +12,7 @@
                 "ms-vscode.cmake-tools",
                 "NVIDIA.nsight-vscode-edition",
                 "BazelBuild.vscode-bazel",
-                "StackBuild.bazel-stack-vscode",
+                // "StackBuild.bazel-stack-vscode",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "ms-python.python",
                 "ms-python.black-formatter"
