@@ -16,6 +16,10 @@ def create_symlink(
         dst.parent.mkdir(parents=True, exist_ok=True)
         if "cmake" in src_file.name.lower():
             dst.with_name("BUILD.bazel").touch(exist_ok=True)
+            print(f"created empty file {dst.with_name('BUILD.bazel')}")
+        elif "readme" in src_file.name.lower():
+            dst.with_name("README.md").touch(exist_ok=True)
+            print(f"created empty file {dst.with_name('README.md')}")
         else:
             if not dst.exists():
                 print(f"creating symlink {dst}")
