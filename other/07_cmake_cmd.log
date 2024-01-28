@@ -1,0 +1,46 @@
+/usr/local/bin/cmake -S/workspaces/BuildSystems -B/workspaces/BuildSystems/out/cmake_build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 07_main_sf
+gmake[1]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+/usr/local/bin/cmake -S/workspaces/BuildSystems -B/workspaces/BuildSystems/out/cmake_build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /workspaces/BuildSystems/out/cmake_build/CMakeFiles 6
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/all
+gmake[2]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+/usr/bin/gmake  -f CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/build.make CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/depend
+gmake[3]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+cd /workspaces/BuildSystems/out/cmake_build && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /workspaces/BuildSystems /workspaces/BuildSystems/CMAKE/07_StandardFlag /workspaces/BuildSystems/out/cmake_build /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/DependInfo.cmake "--color="
+Dependencies file "CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Animal.cpp.o.d" is newer than depends file "/workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/compiler_depend.internal".
+Dependencies file "CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Cat.cpp.o.d" is newer than depends file "/workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/compiler_depend.internal".
+Dependencies file "CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Dog.cpp.o.d" is newer than depends file "/workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target animallib
+gmake[3]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'
+/usr/bin/gmake  -f CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/build.make CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/build
+gmake[3]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+[ 16%] Building CXX object CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Animal.cpp.o
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/bin/g++ -Danimallib_EXPORTS -I/workspaces/BuildSystems/CMAKE/07_StandardFlag/include -O3 -DNDEBUG -std=gnu++14 -fPIC -MD -MT CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Animal.cpp.o -MF CMakeFiles/animallib.dir/src/Animal.cpp.o.d -o CMakeFiles/animallib.dir/src/Animal.cpp.o -c /workspaces/BuildSystems/CMAKE/07_StandardFlag/src/Animal.cpp
+[ 33%] Building CXX object CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Cat.cpp.o
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/bin/g++ -Danimallib_EXPORTS -I/workspaces/BuildSystems/CMAKE/07_StandardFlag/include -O3 -DNDEBUG -std=gnu++14 -fPIC -MD -MT CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Cat.cpp.o -MF CMakeFiles/animallib.dir/src/Cat.cpp.o.d -o CMakeFiles/animallib.dir/src/Cat.cpp.o -c /workspaces/BuildSystems/CMAKE/07_StandardFlag/src/Cat.cpp
+[ 50%] Building CXX object CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Dog.cpp.o
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/bin/g++ -Danimallib_EXPORTS -I/workspaces/BuildSystems/CMAKE/07_StandardFlag/include -O3 -DNDEBUG -std=gnu++14 -fPIC -MD -MT CMAKE/07_StandardFlag/CMakeFiles/animallib.dir/src/Dog.cpp.o -MF CMakeFiles/animallib.dir/src/Dog.cpp.o.d -o CMakeFiles/animallib.dir/src/Dog.cpp.o -c /workspaces/BuildSystems/CMAKE/07_StandardFlag/src/Dog.cpp
+[ 66%] Linking CXX shared library libanimallib.so
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/local/bin/cmake -E cmake_link_script CMakeFiles/animallib.dir/link.txt --verbose=1
+/usr/bin/g++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libanimallib.so -o libanimallib.so CMakeFiles/animallib.dir/src/Animal.cpp.o CMakeFiles/animallib.dir/src/Cat.cpp.o CMakeFiles/animallib.dir/src/Dog.cpp.o 
+gmake[3]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'
+[ 66%] Built target animallib
+/usr/bin/gmake  -f CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/build.make CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/depend
+gmake[3]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+cd /workspaces/BuildSystems/out/cmake_build && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /workspaces/BuildSystems /workspaces/BuildSystems/CMAKE/07_StandardFlag /workspaces/BuildSystems/out/cmake_build /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/DependInfo.cmake "--color="
+Dependencies file "CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o.d" is newer than depends file "/workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target 07_main_sf
+gmake[3]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'
+/usr/bin/gmake  -f CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/build.make CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/build
+gmake[3]: Entering directory '/workspaces/BuildSystems/out/cmake_build'
+[ 83%] Building CXX object CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/bin/g++  -I/workspaces/BuildSystems/CMAKE/07_StandardFlag/include -O3 -DNDEBUG -std=gnu++14 -MD -MT CMAKE/07_StandardFlag/CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o -MF CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o.d -o CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o -c /workspaces/BuildSystems/CMAKE/07_StandardFlag/src/animal-farm.cpp
+[100%] Linking CXX executable 07_main_sf
+cd /workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag && /usr/local/bin/cmake -E cmake_link_script CMakeFiles/07_main_sf.dir/link.txt --verbose=1
+/usr/bin/g++ -O3 -DNDEBUG "CMakeFiles/07_main_sf.dir/src/animal-farm.cpp.o" -o 07_main_sf  -Wl,-rpath,/workspaces/BuildSystems/out/cmake_build/CMAKE/07_StandardFlag libanimallib.so 
+gmake[3]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'
+[100%] Built target 07_main_sf
+gmake[2]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'
+/usr/local/bin/cmake -E cmake_progress_start /workspaces/BuildSystems/out/cmake_build/CMakeFiles 0
+gmake[1]: Leaving directory '/workspaces/BuildSystems/out/cmake_build'

@@ -1,3 +1,6 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/out/cmake_build"
+    "cmake.buildDirectory": "${workspaceFolder}/out/cmake_build",
+    "cSpell.ignoreWords": [
+        "animallib"
+    ]
 }
