@@ -10,12 +10,11 @@
                 "eamodio.gitlens",
                 "streetsidesoftware.code-spell-checker",
                 "ms-vscode.cmake-tools",
-                "NVIDIA.nsight-vscode-edition",
-                "BazelBuild.vscode-bazel",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "ms-python.python",
                 "ms-python.black-formatter",
-                "StackBuild.bazel-stack-vscode"
+                "StackBuild.bazel-stack-vscode",
+                "ionutvmi.path-autocomplete"
             ]
         }
     },
