@@ -1,0 +1,186 @@
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //BAZEL/07_StandardFlag:07_main (1 packages loaded, 0 targets configured)
+INFO: Analyzed target //BAZEL/07_StandardFlag:07_main (36 packages loaded, 163 targets configured).
+INFO: Found 1 target...
+[0 / 3] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+SUBCOMMAND: # //BAZEL/07_StandardFlag:07_main [action 'Compiling BAZEL/07_StandardFlag/src/animal-farm.cpp', configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/07_main/animal-farm.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/07_main/animal-farm.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -iquote \
+    external/bazel_tools \
+    -iquote \
+    bazel-out/k8-fastbuild/bin/external/bazel_tools \
+    -isystem \
+    BAZEL/07_StandardFlag/include \
+    -isystem \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/include \
+    '-std=c++14' \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/07_StandardFlag/src/animal-farm.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/07_main/animal-farm.pic.o)
+# Configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/07_StandardFlag:animallib [action 'Compiling BAZEL/07_StandardFlag/src/Dog.cpp', configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Dog.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Dog.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -isystem \
+    BAZEL/07_StandardFlag/include \
+    -isystem \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/include \
+    '-std=c++14' \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/07_StandardFlag/src/Dog.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Dog.pic.o)
+# Configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/07_StandardFlag:animallib [action 'Compiling BAZEL/07_StandardFlag/src/Cat.cpp', configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Cat.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Cat.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -isystem \
+    BAZEL/07_StandardFlag/include \
+    -isystem \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/include \
+    '-std=c++14' \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/07_StandardFlag/src/Cat.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Cat.pic.o)
+# Configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/07_StandardFlag:animallib [action 'Compiling BAZEL/07_StandardFlag/src/Animal.cpp', configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Animal.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Animal.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -isystem \
+    BAZEL/07_StandardFlag/include \
+    -isystem \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/include \
+    '-std=c++14' \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/07_StandardFlag/src/Animal.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/_objs/animallib/Animal.pic.o)
+# Configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/07_StandardFlag:07_main [action 'Linking BAZEL/07_StandardFlag/07_main', configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    @bazel-out/k8-fastbuild/bin/BAZEL/07_StandardFlag/07_main-2.params)
+# Configuration: 73279f67edcade99c066a4194620613302dc8896062a3e0f5854776e152e86d1
+# Execution platform: @local_config_platform//:host
+Target //BAZEL/07_StandardFlag:07_main up-to-date:
+  out/bazel_build/bazel-bin/BAZEL/07_StandardFlag/07_main
+INFO: Elapsed time: 0.300s, Critical Path: 0.21s
+INFO: 9 processes: 4 internal, 5 processwrapper-sandbox.
+INFO: Build completed successfully, 9 total actions
