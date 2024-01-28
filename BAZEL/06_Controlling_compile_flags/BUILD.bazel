@@ -1,0 +1,44 @@
+config_setting(
+    name = "windows",
+    tags = ["06_ccf"],
+    values = {
+        "cpu": "x86",
+    },
+)
+
+extra_warning = select({
+    ":windows": [],
+    "//conditions:default": [
+        "-Wextra",
+        "-Wpendatic",
+    ],
+})
+
+cc_library(
+    name = "geometrylib",
+    srcs = [
+        "src/circle.cpp",
+        "src/square.cpp",
+    ],
+    hdrs = [
+        "includes/circle.hpp",
+        "includes/square.hpp",
+    ],
+    copts = [
+        "-fPIC",
+        "-Wall",
+    ] + extra_warning,
+    includes = ["!includes"],
+    linkstatic = True,
+    tags = ["06_ccf"],
+    visibility = ["//visibility:private"],
+)
+
+cc_binary(
+    name = "ccf_main",
+    srcs = ["src/main.cpp"],
+    copts = ["-fPIC"],
+    tags = ["06_ccf"],
+    visibility = ["//visibility:private"],
+    deps = [":geometrylib"],
+)

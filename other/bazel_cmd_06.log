@@ -1,0 +1,146 @@
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //BAZEL/06_Controlling_compile_flags:ccf_main (1 packages loaded, 0 targets configured)
+INFO: Analyzed target //BAZEL/06_Controlling_compile_flags:ccf_main (36 packages loaded, 161 targets configured).
+INFO: Found 1 target...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+SUBCOMMAND: # //BAZEL/06_Controlling_compile_flags:geometrylib [action 'Compiling BAZEL/06_Controlling_compile_flags/src/circle.cpp', configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/circle.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/circle.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -isystem \
+    'BAZEL/06_Controlling_compile_flags/!includes' \
+    -isystem \
+    'bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/!includes' \
+    -fPIC \
+    -Wall \
+    -Wextra \
+    -Wpendatic \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/06_Controlling_compile_flags/src/circle.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/circle.pic.o)
+# Configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/06_Controlling_compile_flags:ccf_main [action 'Compiling BAZEL/06_Controlling_compile_flags/src/main.cpp', configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/ccf_main/main.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/ccf_main/main.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -iquote \
+    external/bazel_tools \
+    -iquote \
+    bazel-out/k8-fastbuild/bin/external/bazel_tools \
+    -isystem \
+    'BAZEL/06_Controlling_compile_flags/!includes' \
+    -isystem \
+    'bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/!includes' \
+    -fPIC \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/06_Controlling_compile_flags/src/main.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/ccf_main/main.pic.o)
+# Configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13
+# Execution platform: @local_config_platform//:host
+SUBCOMMAND: # //BAZEL/06_Controlling_compile_flags:geometrylib [action 'Compiling BAZEL/06_Controlling_compile_flags/src/square.cpp', configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13, execution platform: @local_config_platform//:host]
+(cd /root/.cache/bazel/_bazel_root/67af63de5b59066f20dd7b38b4216776/execroot/__main__ && \
+  exec env - \
+    LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PATH=/usr/local/cuda-12.1/bin:/vscode/vscode-server/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/root/miniconda3/bin:/root/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    PWD=/proc/self/cwd \
+  /usr/bin/gcc \
+    -U_FORTIFY_SOURCE \
+    -fstack-protector \
+    -Wall \
+    -Wunused-but-set-parameter \
+    -Wno-free-nonheap-object \
+    -fno-omit-frame-pointer \
+    '-std=c++0x' \
+    -MD \
+    -MF \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/square.pic.d \
+    '-frandom-seed=bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/square.pic.o' \
+    -fPIC \
+    '-DBAZEL_CURRENT_REPOSITORY=""' \
+    -iquote \
+    . \
+    -iquote \
+    bazel-out/k8-fastbuild/bin \
+    -isystem \
+    'BAZEL/06_Controlling_compile_flags/!includes' \
+    -isystem \
+    'bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/!includes' \
+    -fPIC \
+    -Wall \
+    -Wextra \
+    -Wpendatic \
+    -fno-canonical-system-headers \
+    -Wno-builtin-macro-redefined \
+    '-D__DATE__="redacted"' \
+    '-D__TIMESTAMP__="redacted"' \
+    '-D__TIME__="redacted"' \
+    -c \
+    BAZEL/06_Controlling_compile_flags/src/square.cpp \
+    -o \
+    bazel-out/k8-fastbuild/bin/BAZEL/06_Controlling_compile_flags/_objs/geometrylib/square.pic.o)
+# Configuration: 6a1fc98b22e6e815a60a63d52626f85d15b8a83339bfb1740d0c4d67db078e13
+# Execution platform: @local_config_platform//:host
+ERROR: /workspaces/BuildSystems/BAZEL/06_Controlling_compile_flags/BUILD.bazel:17:11: Compiling BAZEL/06_Controlling_compile_flags/src/circle.cpp failed: (Exit 1): gcc failed: error executing command (from target //BAZEL/06_Controlling_compile_flags:geometrylib) /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++0x' -MD -MF ... (remaining 25 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+gcc: error: unrecognized command-line option '-Wpendatic'; did you mean '-Wpedantic'?
+Target //BAZEL/06_Controlling_compile_flags:ccf_main failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 0.098s, Critical Path: 0.01s
+INFO: 7 processes: 7 internal.
+FAILED: Build did NOT complete successfully
