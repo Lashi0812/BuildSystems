@@ -1,0 +1,5 @@
+genrule(
+    name = "create_file",
+    outs = ["out.txt"],
+    cmd = "echo '%s' >$@" % "this is cool"
+)
