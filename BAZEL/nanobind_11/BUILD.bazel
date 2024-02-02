@@ -1,0 +1,7 @@
+
+py_binary(
+    name = "test_math",
+    deps = ["//BAZEL/nanobind_11/my_lib:math_ext"],
+    srcs = ["test_math.py"],
+    visibility = ["//visibility:public"],
+)

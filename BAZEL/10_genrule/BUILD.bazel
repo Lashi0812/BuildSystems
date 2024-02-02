@@ -3,3 +3,4 @@ genrule(
     outs = ["out.txt"],
     cmd = "echo '%s' >$@" % "this is cool"
 )
+

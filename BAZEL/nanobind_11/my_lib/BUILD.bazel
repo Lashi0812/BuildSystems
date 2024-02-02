@@ -1,0 +1,17 @@
+load("@tsl//tsl:tsl.bzl", pybind_extension = "tsl_pybind_extension_opensource")
+
+pybind_extension(
+    name = "math_ext",
+    srcs = ["math_ext.cc"],
+    copts = [
+        "-fexceptions",
+        "-fno-strict-aliasing",
+    ],
+    enable_stub_generation = True,
+    features = ["-use_header_modules"],
+    module_name = "math_ext",
+    deps = [
+        "@nanobind",
+    ],
+    visibility=["//visibility:public"]
+)
