@@ -1,0 +1,11 @@
+py_library(
+    name = "greet",
+    srcs = ["greet.py"], 
+    # visibility = ["//BAZEL:__pkg__"],
+)
+py_binary(
+    name = "main",
+    srcs = ["main.py"],
+    main = "main.py",
+    deps = [":greet"],
+)
